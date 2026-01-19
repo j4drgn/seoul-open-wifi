@@ -36,6 +36,36 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <!--httpClient 처리를 위해서 okhttp3 이용-->
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.10.0</version>
+        </dependency>
+
+        <!--Json 처리를 위해서 gson 이용-->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.13.2</version>
+        </dependency>
+
+        <!--Getter/setter 처리를 위해서 lomok 이용-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.42</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--Sqlite 연결을 위해서 sqlite-jdbc 이용-->
+        <dependency>
+            <groupId>org.xerial</groupId>
+            <artifactId>sqlite-jdbc</artifactId>
+            <version>3.36.0.3</version>
+        </dependency>
+
     </dependencies>
 
     <build>
