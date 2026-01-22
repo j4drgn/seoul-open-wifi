@@ -59,13 +59,12 @@
             <scope>provided</scope>
         </dependency>
 
-        <!--Sqlite 연결을 위해서 sqlite-jdbc 이용-->
+        <!--Mariadb 처리를 위해서 mariadb-java-client 이용-->
         <dependency>
-            <groupId>org.xerial</groupId>
-            <artifactId>sqlite-jdbc</artifactId>
-            <version>3.36.0.3</version>
+            <groupId>org.mariadb.jdbc</groupId>
+            <artifactId>mariadb-java-client</artifactId>
+            <version>3.4.1</version>
         </dependency>
-
     </dependencies>
 
     <build>

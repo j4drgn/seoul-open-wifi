@@ -3,4 +3,33 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
     version="4.0">
+
+    <servlet>
+        <servlet-name>loadWifi</servlet-name>
+        <servlet-class>com.openwifi.seoulopenwifi.servlet.LoadWifiServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>loadWifi</servlet-name>
+        <url-pattern>/load-wifi</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>nearby</servlet-name>
+        <servlet-class>com.openwifi.seoulopenwifi.servlet.NearbyWifiServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>nearby</servlet-name>
+        <url-pattern>/nearby</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>historyDelete</servlet-name>
+        <servlet-class>com.openwifi.seoulopenwifi.servlet.HistoryDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>historyDelete</servlet-name>
+        <url-pattern>/history-delete</url-pattern>
+    </servlet-mapping>
+
 </web-app>
